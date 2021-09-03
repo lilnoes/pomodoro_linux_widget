@@ -24,4 +24,4 @@ __mins__ is number of minutes to count down, default is **25**.
 ## Installation
 *Python 3.5+*
 
-PyGObject, see installations [here] (https://pygobject.readthedocs.io/en/latest/getting_started.html).
+PyGObject, see installations [here](https://pygobject.readthedocs.io/en/latest/getting_started.html).

@@ -1,10 +1,15 @@
 import sys
+from pathlib import Path
 import gi
 gi.require_version("Gtk", "3.0")
 gi.require_version("Gdk", "3.0")
 from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import GLib
+
+#working directory
+parentDir = Path(__file__).absolute().parent
+
 
 #default pomodoro duration
 mins = 25
@@ -21,7 +26,7 @@ if len(sys.argv) > 1:
 class Pomodoro:
     def __init__(self, mins):
         builder = Gtk.Builder()
-        builder.add_from_file("glade.glade")
+        builder.add_from_file(str(parentDir.joinpath("glade.glade")))
 
         self.window = builder.get_object("window1")
         self.button = builder.get_object("button1")
@@ -84,7 +89,7 @@ class Pomodoro:
 
 #connect css to application
 css = Gtk.CssProvider.new()
-css.load_from_path("index.css")
+css.load_from_path(str(parentDir.joinpath("index.css")))
 Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(), css, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
 
 

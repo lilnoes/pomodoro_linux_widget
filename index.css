@@ -1,0 +1,22 @@
+.button1{
+    color: black;
+    border: 10px solid black;
+    border-radius: 40px;
+    font-size: 40px;
+    background-color: white;
+    padding: 10px;
+}
+.label1{
+    color: green;
+    font-size: 30px;
+    font-weight: 600;
+}
+.window{
+    border: none;
+}
+.restart{
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    font-size: 30px;
+}

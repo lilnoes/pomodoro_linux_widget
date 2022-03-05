@@ -2,6 +2,8 @@
 
 **__A simple pomodoro widget for programmers__**
 
+Read more [here](https://leonema.vercel.app/projects/pomodoro-linux-widget)
+
 ## Usage
 
 `python pomodoro.py {mins}`
